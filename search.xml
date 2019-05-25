@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2018%2F09%2F15%2Fhello-world.html</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <title><![CDATA[Ouath2初探]]></title>
+    <url>%2F2019%2F05%2F25%2FOuath2%E5%88%9D%E6%8E%A2.html</url>
+    <content type="text"><![CDATA[OAuth2解决问题 域和场景 开发系统间授权 社交联合登陆 开发API平台 现代微服务安全 / 单页浏览器App(HTML5/JS/无状态) 无线原生App 服务端WebApp 微服务和API间的调用 企业认证内部授权(IAM/SSO) 关于ouath2的简单向导OAuth2.0定义 用于REST/APIs的代理授权框架(delegated authorization framework) 基于令牌Token的授权，在无需暴露用户密码的情况下，使应用能够获取对用户数据的有限访问权限 解耦认证和授权 事实上的标准安全框架，支持多种用例场景 服务端WebApp 浏览器单页SPA 无线/原生App 服务器与服务器之间 主要是给应用授予有限的权限。 备注：关于什莫是SPA？OAuth令牌类型 授权码(Authorization Code Token) 用于授权码授权类型，用于交换获取访问令牌和刷新令牌 刷新令牌(Refresh Token):用于去授权服务器获取一个新的访问令牌 访问令牌(Access Token):用于代表一个用户或者服务直接去访问受保护的资源 Bearer Token：不管谁拿到Token都可以访问资源，像现炒 Proof of Possession(PoP)Token:可以校验client是否对Token有明确的拥有权。 OAuth协议 并没有支持HTTP以外的协议 不是一个认证协议 并没有定义授权处理机制 没有定义token格式 没有定义加密方法 不是单个协议 仅是授权框架， 备注： OAuth本质是如何获取如何使用token， 授权码模式 简化模式————适用于单页应用 关于OAuth2模式选型的问题 授权流程渠道(channels) 前端渠道 后端渠道 使用spring-social实现登陆 CSRF关于]]></content>
+      <tags>
+        <tag>ouath2</tag>
+      </tags>
   </entry>
 </search>
