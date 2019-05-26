@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[链路追踪初步探索]]></title>
+    <url>%2F2019%2F05%2F26%2F%E9%93%BE%E8%B7%AF%E8%BF%BD%E8%B8%AA%E5%88%9D%E6%AD%A5%E6%8E%A2%E7%B4%A2.html</url>
+    <content type="text"><![CDATA[链路追踪初步探索背景： ​ 当代的互联网的服务，通常都是用复杂的、大规模分布式集群来实现的。互联网应用构建在不同的软件模块集上，这些软件模块，有可能是由不同的团队开发、可能使用不同的编程语言来实现、有可能布在了几千台服务器，横跨多个不同的数据中心。因此，就需要一些可以帮助理解系统行为、用于分析性能问题的工具。 Dapper–Google生产环境下的分布式跟踪系统，应运而生。那么我们就来介绍一个大规模集群的跟踪系统，它是如何满足一个低损耗、应用透明的、大范围部署这三个需求的。当然Dapper设计之初，参考了一些其他分布式系统的理念，尤其是Magpie和X-Trace，但是我们之所以能成功应用在生产环境上，还需要一些画龙点睛之笔，例如采样率的使用以及把代码植入限制在一小部分公共库的改造上。 ​ —————-Dapper,大规模分布式系统的跟踪系统 Google Dapper简介## ##链路追踪初步探索]]></content>
+      <tags>
+        <tag>链路追踪</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Ouath2初探]]></title>
     <url>%2F2019%2F05%2F25%2FOuath2%E5%88%9D%E6%8E%A2.html</url>
     <content type="text"><![CDATA[OAuth2解决问题 域和场景 开发系统间授权 社交联合登陆 开发API平台 现代微服务安全 / 单页浏览器App(HTML5/JS/无状态) 无线原生App 服务端WebApp 微服务和API间的调用 企业认证内部授权(IAM/SSO) 关于ouath2的简单向导OAuth2.0定义 用于REST/APIs的代理授权框架(delegated authorization framework) 基于令牌Token的授权，在无需暴露用户密码的情况下，使应用能够获取对用户数据的有限访问权限 解耦认证和授权 事实上的标准安全框架，支持多种用例场景 服务端WebApp 浏览器单页SPA 无线/原生App 服务器与服务器之间 主要是给应用授予有限的权限。 备注：关于什莫是SPA？OAuth令牌类型 授权码(Authorization Code Token) 用于授权码授权类型，用于交换获取访问令牌和刷新令牌 刷新令牌(Refresh Token):用于去授权服务器获取一个新的访问令牌 访问令牌(Access Token):用于代表一个用户或者服务直接去访问受保护的资源 Bearer Token：不管谁拿到Token都可以访问资源，像现炒 Proof of Possession(PoP)Token:可以校验client是否对Token有明确的拥有权。 OAuth协议 并没有支持HTTP以外的协议 不是一个认证协议 并没有定义授权处理机制 没有定义token格式 没有定义加密方法 不是单个协议 仅是授权框架， 备注： OAuth本质是如何获取如何使用token， 授权码模式 简化模式————适用于单页应用 关于OAuth2模式选型的问题 授权流程渠道(channels) 前端渠道 后端渠道 使用spring-social实现登陆 CSRF关于]]></content>
